@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Challenge Snips</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  #container {
+   }
+  #elem {
+    position: relative;
+      }
+  button  {
+    width: 150px;
+    height: 40px;
+  }
+ </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="exercice">
+      <header>
+          SNIPS
+      </header>
+      <section>
+        <p>
+          Make sure you can drag and drop the black square inside the white box.
+        </p>
+        <p>
+          Then, display in the second white box the relative position of the black square, replacing the "?" respectively by their x and y coordinates.
+        <p>
+      </section>
+      <footer>
+        <div id="container">
+          <canvas id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");'></canvas>
+        </div>
+        <div id="coordinates">
+          New coordinates => {x:?, y:?}
+        </div>
+        <div id="Kanban">
+          <button>+</button>
+          <button>-</button>
+          <div>
+          </div>
+          <div id="buttons">
+            <button></button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="script/dragNdrop.js"></script>
+</body>
+</html>
